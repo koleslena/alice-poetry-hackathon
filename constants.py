@@ -6,6 +6,7 @@ REPEAT = 'repeat'
 poems = [
     'texts/lermontov-road.txt',
     'texts/pushkin-k_kern.txt',
+    'texts/esenin-white.txt',
 ]
 
 exit_response = {

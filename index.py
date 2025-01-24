@@ -55,6 +55,9 @@ def handler(event, context):
             
             if req_text in exit_requests:
                 return response_construct(event, exit_response)
+                        
+            if req_text in help_requests and len_req_text < 3:
+                return response_construct(event, help_response)
             
             if check_in(req_text, yes_request) and len_req_text < 3:
                 return build_poetry_response(event, session_state)

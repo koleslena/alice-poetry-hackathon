@@ -24,12 +24,22 @@ exit_response = {
             'end_session': 'true'
         }
 
+help_response = {
+            'text': 'Все просто! Я читаю стих, а ты повторяешь. \n Приступим?',
+            'end_session': 'false',
+            'buttons': [
+                {'title': 'Да', 'hide': True}, 
+                {'title': 'Нет', 'hide': True}
+                ]  
+}
+
 welcome_response = {
             'text': 'Добро пожаловать! Приступим к изучению стиха?',
             'end_session': 'false',
             'buttons': [
                 {'title': 'Да', 'hide': True}, 
-                {'title': 'Нет', 'hide': True}
+                {'title': 'Нет', 'hide': True},
+                {'title': '?', 'hide': True}
                 ]
         }
 
@@ -63,6 +73,7 @@ no_way_response = {
         }
 
 exit_requests = ['выход', 'хватит', 'надоело', 'алиса выйди из навыка', 'выйти', 'алиса хватит', 'алиса выйти']
+help_requests = ['помощь', 'помогите', 'непонятно', 'как это?', 'что это?', '?']
 
 yes_request = ['да', 'давай', 'учить']
 no_request = ['нет', 'не надо', 'не']
